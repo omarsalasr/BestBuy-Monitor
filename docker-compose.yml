@@ -1,8 +1,9 @@
-version: "2.2"
+version: "3"
 services:
-    BBbot:
+backend:
     container_name: BBbot
-    build: 
+    restart: always
+    build: ./
     links:
       - mongo
 mongo:
